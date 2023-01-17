@@ -8,15 +8,17 @@ class BookList {
     this.render();
     this.bindEvents();
   }
+
   render() {
     this.books.forEach((book) => {
       this.booksContainer.innerHTML += ` 
       <div class="Books">
-                  <p class="title-text">${book.title}</p>
-                  <p class="author-text">${book.author}</p>
-                  <button class="remove-book">Remove</button>
-                  <hr>
-              </div>
+      <div class="booksList">
+      <p>"${book.title}" by ${book.author}</p>
+     <button class="remove-book">Remove</button>
+      </div>
+   </div>
+   
       `;
     });
   }
@@ -26,38 +28,33 @@ class BookList {
     this.booksContainer.addEventListener("click", this.removeBook.bind(this));
   }
 
-    addBook(e) {
+  addBook(e) {
     e.preventDefault();
     this.booksContainer.innerHTML += ` 
-      <div class="Books">
-                  <p class="title-text">${this.bookTitle.value}</p>
-                  <p class="author-text">${this.bookAuthor.value}</p>
-                  <button class="remove-book">Remove</button>
-                  <hr>
-              </div>
-              
-      `;
+        <div class="Books">
+                    <p>"${this.bookTitle.value}" by ${this.bookAuthor.value}</p>
+                    <button class="remove-book">Remove</button>
+                </div>
+                
+        `;
     this.books.push({
       title: this.bookTitle.value,
       author: this.bookAuthor.value,
     });
 
-    localStorage.setItem('Books', JSON.stringify(this.books));
+    localStorage.setItem("Books", JSON.stringify(this.books));
   }
 
   removeBook(e) {
-    if (e.target.classList.contains('remove-book')) {
+    if (e.target.classList.contains("remove-book")) {
       const index = Array.from(
-        e.target.parentElement.parentElement.children,
+        e.target.parentElement.parentElement.children
       ).indexOf(e.target.parentElement);
       this.books.splice(index, 1);
       e.target.parentElement.remove();
-      localStorage.setItem('Books', JSON.stringify(this.books));
+      localStorage.setItem("Books", JSON.stringify(this.books));
     }
   }
 }
 
 const bookList = new BookList();
- 
-
-

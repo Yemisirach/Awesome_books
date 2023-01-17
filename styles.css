@@ -1,5 +1,10 @@
+body {
+  max-width: 25%;
+  margin: 0 auto;
+}
 .form-div,
-.header-wraper {
+.header-wraper,
+h2 {
   display: flex;
   justify-content: center;
 }
@@ -10,16 +15,21 @@
   flex-direction: column;
 }
 
+.books-container {
+  border: 2px solid black;
+}
+
 .Books {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 200px;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 10%;
   margin: auto;
 }
 
 .remove-book {
   width: 4.2rem;
+  /* height: 2.1rem; */
 }
 
 #add-button {
@@ -27,5 +37,14 @@
 }
 
 hr {
-  width: 400px;
+  width: 3%;
+}
+.booksList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.Books:nth-child(odd) {
+  background-color: rgb(218, 214, 214);
 }
