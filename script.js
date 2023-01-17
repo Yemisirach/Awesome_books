@@ -25,4 +25,39 @@ class BookList {
     this.form.addEventListener("submit", this.addBook.bind(this));
     this.booksContainer.addEventListener("click", this.removeBook.bind(this));
   }
+
+    addBook(e) {
+    e.preventDefault();
+    this.booksContainer.innerHTML += ` 
+      <div class="Books">
+                  <p class="title-text">${this.bookTitle.value}</p>
+                  <p class="author-text">${this.bookAuthor.value}</p>
+                  <button class="remove-book">Remove</button>
+                  <hr>
+              </div>
+              
+      `;
+    this.books.push({
+      title: this.bookTitle.value,
+      author: this.bookAuthor.value,
+    });
+
+    localStorage.setItem('Books', JSON.stringify(this.books));
+  }
+
+  removeBook(e) {
+    if (e.target.classList.contains('remove-book')) {
+      const index = Array.from(
+        e.target.parentElement.parentElement.children,
+      ).indexOf(e.target.parentElement);
+      this.books.splice(index, 1);
+      e.target.parentElement.remove();
+      localStorage.setItem('Books', JSON.stringify(this.books));
+    }
+  }
 }
+
+const bookList = new BookList();
+ 
+
+
