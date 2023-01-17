@@ -1,22 +1,20 @@
 class BookList {
   constructor() {
-    this.form = document.querySelector(".add-book-form");
-    this.bookTitle = document.querySelector("#book-title");
-    this.bookAuthor = document.querySelector("#book-author");
-    this.booksContainer = document.querySelector(".books-container");
-    this.books = JSON.parse(localStorage.getItem("Books")) || [];
-    this.render();
+    this.form = document.querySelector('.add-book-form');
+    this.bookTitle = document.querySelector('#book-title');
+    this.bookAuthor = document.querySelector('#book-author');
+    this.booksContainer = document.querySelector('.books-container');
+    this.books = JSON.parse(localStorage.getItem('Books')) || [];
+    this.domDisplay();
     this.bindEvents();
   }
 
-  render() {
+  domDisplay() {
     this.books.forEach((book) => {
       this.booksContainer.innerHTML += ` 
       <div class="Books">
-      <div class="booksList">
       <p>"${book.title}" by ${book.author}</p>
      <button class="remove-book">Remove</button>
-      </div>
    </div>
    
       `;
@@ -24,8 +22,8 @@ class BookList {
   }
 
   bindEvents() {
-    this.form.addEventListener("submit", this.addBook.bind(this));
-    this.booksContainer.addEventListener("click", this.removeBook.bind(this));
+    this.form.addEventListener('submit', this.addBook.bind(this));
+    this.booksContainer.addEventListener('click', this.removeBook.bind(this));
   }
 
   addBook(e) {
@@ -42,19 +40,19 @@ class BookList {
       author: this.bookAuthor.value,
     });
 
-    localStorage.setItem("Books", JSON.stringify(this.books));
+    localStorage.setItem('Books', JSON.stringify(this.books));
   }
 
   removeBook(e) {
-    if (e.target.classList.contains("remove-book")) {
+    if (e.target.classList.contains('remove-book')) {
       const index = Array.from(
-        e.target.parentElement.parentElement.children
+        e.target.parentElement.parentElement.children,
       ).indexOf(e.target.parentElement);
       this.books.splice(index, 1);
       e.target.parentElement.remove();
-      localStorage.setItem("Books", JSON.stringify(this.books));
+      localStorage.setItem('Books', JSON.stringify(this.books));
     }
   }
 }
 
-const bookList = new BookList();
+new BookList(); // eslint-disable-line no-new
