@@ -57,7 +57,7 @@ se up new repository and prepare it for development using best practices(e.g.lin
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and runing follow these simple example steps.
-1.Clone the Repo or Download the Zip file or git clone git@github.com:Yemisirach/My-Portfoli](https://github.com/Yemisirach/My-Portfolio.git)o.
+1.Clone the Repo or Download the Zip file or git clone git@github.com:Yemisirach/Awsome_books](https://github.com/Yemisirach/Awesome_books.git)o.
 Open it with the live server
 ##Prerequisies
 In order to run this pproject need.
