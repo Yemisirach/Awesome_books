@@ -1,0 +1,31 @@
+.form-div,
+.header-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.add-book-form {
+  margin-right: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Books {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 200px;
+  margin: auto;
+}
+
+.remove-book {
+  width: 4.2rem;
+}
+
+#add-button {
+  width: 3rem;
+}
+
+hr {
+  width: 400px;
+}
