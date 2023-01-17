@@ -2,11 +2,9 @@
 
 <a name="readme-top"></a>
 
-# Awesome_books:YemisrachAwesome_books
-
 Getting Started
 Cloning the project
-Git clone git@github.com:# My-Portfolio
+Git clone git@github.com:# Awesome Books
 <a name="readme-top"></a>
 
 # Awesome_books
@@ -38,13 +36,13 @@ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standa
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My-portfolio] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
 Description for the fris mileston in he process of creating your portfolio website.
 
 se up new repository and prepare it for development using best practices(e.g.linters). build the frist 2 section of the mobile frist and desktop verision using the templae you chose.
 
-[My-portfolio] is a...
+[Awesome Books] is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,7 +50,7 @@ se up new repository and prepare it for development using best practices(e.g.lin
 
 ## 🚀 Live Demo
 
-<a href="https://yemisirach.github.io/My-Portfolio/">Live Demo link</a>
+<a href="https://yemisirach.github.io/Awsome_book/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
