@@ -1,20 +1,18 @@
 body {
-  max-width: 80%;
-  margin: 0 auto;
+  padding: 1% 5%;
+  height: 100vh;
 }
 
 .form-div,
-.header-wraper,
 h2 {
   display: flex;
   justify-content: center;
 }
 
 .add-book-form {
-  margin-right: 1.6rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 
 .books-container {
@@ -38,12 +36,10 @@ h2 {
 }
 
 #add-button {
-  width: 3rem;
+  width: 4rem;
   align-self: flex-end;
-}
-
-hr {
-  width: 3%;
+  padding: 3%;
+  font-size: 1rem;
 }
 
 .Books:nth-child(odd) {
@@ -51,15 +47,14 @@ hr {
 }
 
 .add-book-form input {
-  padding: 1%;
+  padding: 3%;
   border: 1px solid rgb(77, 77, 77);
+  font-size: 1rem;
 }
 
-/* *****? */
 main {
   width: 50%;
-  min-height: calc(100vh - 140px);
-  max-width: 400px;
+  height: 70%;
   margin: 0 auto;
 }
 
@@ -67,6 +62,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0% 3% 0% 2%;
+  font-size: 1.2rem;
+}
+
+.nav-logo-frame {
+  text-decoration: none;
+  color: black;
 }
 
 nav ul {
@@ -92,15 +94,17 @@ hr {
   background-color: black;
 }
 
+.date {
+  display: flex;
+  justify-content: end;
+  padding: 0% 1% 0% 0%;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 0 auto;
-}
-
-form input {
-  padding: 5px;
 }
 
 form div {
@@ -129,13 +133,13 @@ li {
   cursor: pointer;
 }
 
-nav,
-footer {
-  position: relative;
-  padding: 0 10px;
+pre {
+  margin: 0% 0% 0% 10%;
+  font-size: 1rem;
 }
 
 footer {
+  padding: 1%;
   margin: 20px 0 5px 0;
 }
 
