@@ -31,6 +31,7 @@ window.onload = () => {
   refreshDOM();
   time.innerHTML = `${now.c.month} ${now.c.day} ${now.c.year}, ${now.c.hour}:${now.c.minute}:${now.c.second}`;
 };
+
 class BookList {
   constructor() {
     this.form = document.querySelector(".add-book-form");
