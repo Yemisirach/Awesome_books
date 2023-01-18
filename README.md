@@ -50,7 +50,7 @@ se up new repository and prepare it for development using best practices(e.g.lin
 
 ## 🚀 Live Demo
 
-<a href="https://yemisirach.github.io/Awsome_book/">Live Demo link</a>
+<a href=" https://yemisirach.github.io/Awesome_books/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 

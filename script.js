@@ -1,10 +1,44 @@
+const menuItems = document.querySelectorAll("li");
+const sections = document.querySelectorAll("section");
+function reset() {
+  sections.forEach((section) => {
+    section.style.display = "none";
+  });
+}
+reset();
+sections[0].style.display = "block";
+
+menuItems[0].addEventListener("click", () => {
+  reset();
+  sections[0].style.display = "block";
+});
+
+menuItems[1].addEventListener("click", () => {
+  reset();
+  sections[1].style.display = "block";
+});
+
+menuItems[2].addEventListener("click", () => {
+  reset();
+  sections[2].style.display = "block";
+});
+
+// For current time
+const { DateTime } = luxon;
+const now = DateTime.now();
+
+window.onload = () => {
+  refreshDOM();
+  time.innerHTML = `${now.c.month} ${now.c.day} ${now.c.year}, ${now.c.hour}:${now.c.minute}:${now.c.second}`;
+};
 class BookList {
   constructor() {
-    this.form = document.querySelector('.add-book-form');
-    this.bookTitle = document.querySelector('#book-title');
-    this.bookAuthor = document.querySelector('#book-author');
-    this.booksContainer = document.querySelector('.books-container');
-    this.books = JSON.parse(localStorage.getItem('Books')) || [];
+    this.form = document.querySelector(".add-book-form");
+    this.bookTitle = document.querySelector("#book-title");
+    this.bookAuthor = document.querySelector("#book-author");
+    this.booksContainer = document.querySelector(".books-container");
+
+    this.books = JSON.parse(localStorage.getItem("Books")) || [];
     this.domDisplay();
     this.bindEvents();
   }
@@ -22,8 +56,8 @@ class BookList {
   }
 
   bindEvents() {
-    this.form.addEventListener('submit', this.addBook.bind(this));
-    this.booksContainer.addEventListener('click', this.removeBook.bind(this));
+    this.form.addEventListener("submit", this.addBook.bind(this));
+    this.booksContainer.addEventListener("click", this.removeBook.bind(this));
   }
 
   addBook(e) {
@@ -40,17 +74,17 @@ class BookList {
       author: this.bookAuthor.value,
     });
 
-    localStorage.setItem('Books', JSON.stringify(this.books));
+    localStorage.setItem("Books", JSON.stringify(this.books));
   }
 
   removeBook(e) {
-    if (e.target.classList.contains('remove-book')) {
+    if (e.target.classList.contains("remove-book")) {
       const index = Array.from(
-        e.target.parentElement.parentElement.children,
+        e.target.parentElement.parentElement.children
       ).indexOf(e.target.parentElement);
       this.books.splice(index, 1);
       e.target.parentElement.remove();
-      localStorage.setItem('Books', JSON.stringify(this.books));
+      localStorage.setItem("Books", JSON.stringify(this.books));
     }
   }
 }
