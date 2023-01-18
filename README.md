@@ -1,36 +1,17 @@
+# 
+
+# 
+
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <img src="https://media.wbur.org/wp/2022/12/cover-e1670599123274-1000x661.jpg" alt="logo" width="160"  height="auto" />
+  <br/>
+   <br/>
+
+  <h1><b> Awesome-Books 📚📚📚</b></h1>
 
 </div>
 
@@ -42,76 +23,72 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
+
+<br>
+
+<!-- DEPLOYMENT -->
+### This project goes live [here](yourpagedeployment.com) 🚀 .
+
+<br>
+
+<!-- DEPLOYMENT -->
+<!-- ### Have a look at the project's video presentation [here](https://www.loom.com/share/1f7de2b9345a4d3988c6327952899d30) 📽️ . -->
+
+<br>
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**Awesome Books** is a pair programming project for saving book details like an online library. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
-  <summary>Client</summary>
+  <summary>HTML</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Link to HTML</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>CSS</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Link to CSS</a></li>
   </ul>
 </details>
 
 <details>
-<summary>Database</summary>
+  <summary>Javascript</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://www.javascript.com/">Link to Javascript</a></li>
   </ul>
 </details>
+
+
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- **This Project has a Readme.md file**
+- **This Project has a gitignore file**
+- **This projects follows all Microverse Linters**
+- **This project takes user inputs of Book title and Authors**
+- **This project displays the input for Book details dynamically on the DOM**
+- **This project saves the Book details insode the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,51 +96,36 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need to copy the link of this Repository.
 
-<!--
-Example command:
+
 
 ```sh
- gem install rails
+ https://github.com/Yemisirach/Awesome_books.git
 ```
- -->
+<br>
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired directory using the command: 
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd your-folder
+  git clone https://github.com/Yemisirach/Awesome_books.git
 ```
---->
 
-### Install
+<br>
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+Kindly go ahead and give this project a massage but do not forget to give a detailed description in your pull request.
 
 <!--
 Example command:
@@ -173,81 +135,47 @@ Example command:
 ```
 --->
 
-### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
+### 👥 Frempong
 
-> Mention all of the collaborators of this project.
+- GitHub: [@frempongdev](https://github.com/frempongdev)
+- Twitter: [@knobaddy](https://twitter.com/knobaddy)
+- LinkedIn: [Samuel knower Amankwaa-Frempong](https://www.linkedin.com/in/samuel-knower-amankwaa-frempong-356802256/)
 
-👤 **Author1**
+### 👥 Yemisirach 
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Yemisirach)
+- Twitter: [@twitterhandle](https://twitter.com/TamiratYemisrach)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/yemisirach)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- [ ] **[CSS styling]**
+- [ ] **[Multi Pages]**
+- [ ] **[Server Storage]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project kindly support by suggesting changed by forking and pull requests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,25 +183,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+We would like to thank  everyone who inspired us to learn programming. Regards to the whole Microverse team, Peers, and family supporting. 
+<!-- <br>A massive Thank You to [Cindy Shin](https://www.behance.net/adagio07) who is the original designer of this [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -281,8 +192,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./license) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
