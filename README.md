@@ -23,6 +23,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+   ## 🚀 Live Demo
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -91,6 +92,10 @@
 - **This project saves the Book details insode the Browser**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo
+
+<a href=" https://yemisirach.github.io/Awesome_books/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
