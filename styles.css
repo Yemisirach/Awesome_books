@@ -56,3 +56,89 @@ hr {
 }
 
 /* *****? */
+main {
+  width: 50%;
+  min-height: calc(100vh - 140px);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 45px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 80px;
+  align-items: center;
+  height: 2px;
+  background-color: black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+form input {
+  padding: 5px;
+}
+
+form div {
+  text-align: right;
+}
+
+nav,
+footer,
+.bookContainer {
+  border: 2px outset rgb(95, 93, 93);
+  border-radius: 5px;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 5px;
+}
+
+.innerContainer:nth-child(odd) {
+  background-color: rgb(231, 227, 227);
+}
+
+li {
+  cursor: pointer;
+}
+
+nav,
+footer {
+  position: relative;
+  padding: 0 10px;
+}
+
+footer {
+  margin: 20px 0 5px 0;
+}
+
+.hidden {
+  display: none;
+}
