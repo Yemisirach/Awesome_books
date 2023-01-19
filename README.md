@@ -61,7 +61,7 @@
 - **This project displays the input for Book details dynamically on the DOM**
 - **This project saves the Book details insode the Browser**
 
-<a href=" https://yemisirach.github.io/Awesome_books/">Live Demo link</a>
+<a href="https://yemisirach.github.io/Awesome_books/"></a>Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
