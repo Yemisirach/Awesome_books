@@ -71,6 +71,7 @@ nav {
   align-items: center;
   padding: 0% 3% 0% 2%;
   font-size: 1.2rem;
+  background-color: rgb(248, 183, 63);
 }
 
 .nav-logo-frame {
@@ -148,6 +149,7 @@ pre {
 footer {
   padding: 1%;
   margin: 20px 0 5px 0;
+  background-color: rgb(248, 183, 63);
 }
 
 .hidden {
