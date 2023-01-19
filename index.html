@@ -9,18 +9,55 @@
   </head>
 
   <body>
-    <h1 class="header-wraper">All Awesome Books</h1>
-    <div class="books-container"></div>
-    <hr />
-    <h2>Add a new book</h2>
-    <div class="form-div">
-      <form action="submit" class="add-book-form">
-        <input type="text" id="book-title" placeholder="Title" required/> <br />
-        <input type="text" id="book-author" placeholder="Author" required/> <br />
-        <button id="add-button">Add</button>
-      </form>
-    </div>
+    <header>
+      <nav id="nav" class="invisible">
+        <a href="./index.html" class="nav-logo-frame"> Awesome Books </a>
+        <ul class="menu">
+          <li>List</li>
+          <hr class="rotate invisible" />
+          <li>Add new</li>
+          <hr class="rotate invisible" />
+          <li>Contact</li>
+        </ul>
+      </nav>
 
+    </header>
+    <div class="date">
+      <p id="current-time" class="current-time"></p>
+    </div>
+    <main>
+      <section>
+        <h1>All Awesome Books</h1>
+        <div class="books-container"></div>
+      </section>
+
+      <section>
+        <h2>Add a new book</h2>
+        <div class="form-div">
+          <form action="submit" class="add-book-form">
+            <input type="text" id="book-title" placeholder="Title" required />
+            <br />
+            <input type="text" id="book-author" placeholder="Author" required />
+            <br />
+            <button id="add-button">Add</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h1>Contact Information</h1>
+        <pre>
+Do you have any question or just want to say Hello!
+You can reach out to us
+
+  * Our e-mail: yemsrach@gmail.com / samakwaa.frempong@gmail.com
+  * Our phone numbers: +251916280543 / +233548356263
+  * Our address: 22 FirstStreet, 84503 City, Africa
+  </pre
+        >
+      </section>
+    </main>
+    <footer>Copyright - Yemisirach & Frempong</footer>
     <script src="script.js"></script>
   </body>
 </html>

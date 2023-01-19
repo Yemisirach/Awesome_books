@@ -1,9 +1,44 @@
+const menuItems = document.querySelectorAll('li');
+const sections = document.querySelectorAll('section');
+function reset() {
+  sections.forEach((section) => {
+    section.style.display = 'none';
+  });
+}
+reset();
+sections[0].style.display = 'block';
+
+menuItems[0].addEventListener('click', () => {
+  reset();
+  sections[0].style.display = 'block';
+});
+
+menuItems[1].addEventListener('click', () => {
+  reset();
+  sections[1].style.display = 'block';
+});
+
+menuItems[2].addEventListener('click', () => {
+  reset();
+  sections[2].style.display = 'block';
+});
+
+const dateTimeDiv = document.getElementById('current-time');
+const date = new Date();
+const dateString = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+const timeString = date.toLocaleTimeString('en-US', {
+  hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true,
+});
+const dateTime = `${dateString} , ${timeString.toLowerCase()}`;
+dateTimeDiv.innerHTML = dateTime;
+
 class BookList {
   constructor() {
     this.form = document.querySelector('.add-book-form');
     this.bookTitle = document.querySelector('#book-title');
     this.bookAuthor = document.querySelector('#book-author');
     this.booksContainer = document.querySelector('.books-container');
+
     this.books = JSON.parse(localStorage.getItem('Books')) || [];
     this.domDisplay();
     this.bindEvents();
@@ -41,6 +76,7 @@ class BookList {
     });
 
     localStorage.setItem('Books', JSON.stringify(this.books));
+    this.form.reset();
   }
 
   removeBook(e) {

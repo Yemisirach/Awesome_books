@@ -1,20 +1,18 @@
 body {
-  max-width: 80%;
-  margin: 0 auto;
+  padding: 1% 5%;
+  height: 100vh;
 }
 
 .form-div,
-.header-wraper,
 h2 {
   display: flex;
   justify-content: center;
 }
 
 .add-book-form {
-  margin-right: 1.6rem;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 100%;
 }
 
 .books-container {
@@ -38,12 +36,10 @@ h2 {
 }
 
 #add-button {
-  width: 3rem;
+  width: 4rem;
   align-self: flex-end;
-}
-
-hr {
-  width: 3%;
+  padding: 3%;
+  font-size: 1rem;
 }
 
 .Books:nth-child(odd) {
@@ -51,6 +47,102 @@ hr {
 }
 
 .add-book-form input {
-  padding: 1%;
+  padding: 3%;
   border: 1px solid rgb(77, 77, 77);
+  font-size: 1rem;
+}
+
+main {
+  width: 50%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 3% 0% 2%;
+  font-size: 1.2rem;
+}
+
+.nav-logo-frame {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  width: 45px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+hr {
+  width: 80px;
+  align-items: center;
+  height: 2px;
+  background-color: black;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+  padding: 0% 1% 0% 0%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+form div {
+  text-align: right;
+}
+
+nav,
+footer,
+.bookContainer {
+  border: 2px outset rgb(95, 93, 93);
+  border-radius: 5px;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 5px;
+}
+
+.innerContainer:nth-child(odd) {
+  background-color: rgb(231, 227, 227);
+}
+
+li {
+  cursor: pointer;
+}
+
+pre {
+  margin: 0% 0% 0% 10%;
+  font-size: 1rem;
+}
+
+footer {
+  padding: 1%;
+  margin: 20px 0 5px 0;
+}
+
+.hidden {
+  display: none;
 }
