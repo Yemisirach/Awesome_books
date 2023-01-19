@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 body {
   padding: 1% 5%;
-  height: 100vh;
+  height: 88vh;
+  font-family: "Architects Daughter", cursive;
+  font-weight: 900;
+  background-image: url(./image/bg4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-div,
