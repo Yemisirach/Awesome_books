@@ -2,7 +2,7 @@
 
 body {
   padding: 1% 5%;
-  height: 88vh;
+  height: 87vh;
   font-family: "Architects Daughter", cursive;
   font-weight: 900;
   background-image: url(./image/bg4.jpg);
@@ -117,6 +117,7 @@ form {
 
 form div {
   text-align: right;
+  font-weight: 100;
 }
 
 nav,
@@ -124,6 +125,9 @@ footer,
 .bookContainer {
   border: 2px outset rgb(95, 93, 93);
   border-radius: 5px;
+}
+.bookContainer {
+  font-weight: 100;
 }
 
 .innerContainer {
